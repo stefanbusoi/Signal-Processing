@@ -1,6 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import time as t
+import scipy.io.wavfile as wavfile
+import scipy.signal  as signal
+import sounddevice as sounddev
 index=0
 def save():
     global index
