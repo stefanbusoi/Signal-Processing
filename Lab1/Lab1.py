@@ -27,16 +27,16 @@ def stemEs(func,freq,min=0,max=1,color='white'):
 
 
 def ex1():
-    plotEs(x,1000,0,0.2,color='red')
-    stemEs(x,40,0,0.2,color='red') #0.005
+    plotEs(x,1000,0,0.03,color='red')
+    stemEs(x,int(0.03/0.0005),0,0.03,color='red') #0.005
     save()
     plt.show()
-    plotEs(y,1000,0,0.2,color='green')
-    stemEs(y,40,0,0.2,color='green')
+    plotEs(y,1000,0,0.03,color='green')
+    stemEs(y,int(0.03/0.0005),0,0.03,color='green')
     save()
     plt.show()
-    stemEs(z,40,0,0.2,color='blue')
-    plotEs(z,1000,0,0.2,color='blue')
+    stemEs(z,int(0.03/0.0005),0,0.03,color='blue')
+    plotEs(z,1000,0,0.03,color='blue')
     save()
     plt.show()
 
@@ -58,7 +58,7 @@ def ex2():
     plotEs(sin400,1600,0,0.01,color='red')
     save()
     plt.show()
-    plotEs(sin800,1000,0,0.01,color='red')
+    plotEs(sin800,1000,0,3,color='red')
     save()
     plt.show()
     plotEs(lambda t:sawTooth(t,freq=240),1000,0,0.01,color='red')
@@ -75,7 +75,6 @@ def ex2():
     plt.imshow(mat0)
     save()
     plt.show()
-ex1()
 ex2()
 
 #ex3
